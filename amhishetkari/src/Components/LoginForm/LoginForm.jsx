@@ -142,31 +142,6 @@ export const LoginForm = () => {
           throw new Error("Server Error");
         }
       })
-  //     .then(obj => {
-  //       if (Object.keys(obj).length === 0) {
-  //         setMSG("Please Check Username and Password");
-  //       } else {
-  //         if (obj.status === false) {
-  //           alert("Request has been Approved");
-  //         } else {
-  //           switch (obj.role_id.role_id) {
-  //             case 1:
-  //               navigate("/FHome");
-  //               break;
-  //             case 2:
-  //               navigate("/Student_Home");
-  //               break;
-  //             case 3:
-  //               navigate("/Professor_Home");
-  //               break;
-  //             default:
-  //               setMSG("Invalid role!");
-  //           }
-  //         }
-  //       }
-  //     })
-  //     .catch(error => alert("Server error. Try after some time"));
-  // };
   .then(obj=>{
     if(Object.keys(obj).length===0)
     {
